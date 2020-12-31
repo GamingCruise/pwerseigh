@@ -19,7 +19,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 	
- // ground=createSprite(400,400,230,20)
+ 
 ground=new Ground(400,400,230,20)
  	World.add(world, ground);
 
@@ -41,19 +41,11 @@ box14=new Box(400,290,30,40)
 box15=new Box(430,290,30,40)
 box16=new Box(400,250,30,40)
 circle1=new Circle(100,200,20)
-//slingShot =new SlingShot (circle1.body,{x:130,y:200})
 
-	//paper1.body=Bodies.circle(height/6, 200, 20, option1)
-	//paper1=new Paper(height/6,200,20,option1);
-	//World.add(world, paper1);
 	
 	
 	sling =new SlingShot (circle1.body,{x:130,y:200})
-	// Online Code
-	//dustbinObj=new dustbin(1200,650);
-	//paperObject=new paper(200,450,40);
-	//groundObject=new ground(width/2,670,width,20);
-	//Create a Ground
+	
 
 Engine.run(engine);
 	
@@ -62,20 +54,10 @@ Engine.run(engine);
 
 
 function draw() {
-	background("grey");
+	background("blue");
 Engine.update(engine);
-  //rectMode(CENTER);
   
-
-
  
- // ellipse(paper1.position.x,paper1.position.y, 20,20);
- //launcher1.display();
-
-  //dustbinObj.display();
-  //paperObject.display();
-  //groundObject.display();
- // ground=createSprite(400,400,230,20)
   circle1.display();
   sling.display();
   box1.display();
